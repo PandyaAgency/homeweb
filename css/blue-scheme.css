@@ -459,7 +459,7 @@ input.mainBtn {
 }
 
 #homeIntro {
-  background-image: url("../images/includes/homeintro.jpg");
+  background-image: url("../images/slider-right-dec.jpg");
 }
 
 #portfolio {
@@ -483,9 +483,7 @@ input.mainBtn {
   background-attachment: inherit;
 }
 
-#contact {
-  background-image: url("../images/includes/contact.jpg");
-}
+
 
 .parallax {
   background-attachment: fixed;
@@ -496,9 +494,9 @@ input.mainBtn {
   overflow: hidden;
 }
 
-.parallax-overlay {
+/* .parallax-overlay {
   background-color: rgba(0, 0, 0, 0.65);
-}
+} */
 
 .pageTitle {
   padding-top: 70px;
@@ -1249,80 +1247,157 @@ blockquote {
   border: none;
 }
 
-/*------------------------------------------------------
-	Contact Page Styling 
---------------------------------------------------------*/
-.contact-wrapper h3 {
-  margin: 0 0 30px 0;
+
+/* 
+---------------------------------------------
+contact
+--------------------------------------------- 
+*/
+
+.contact-us {
+  padding-top: 130px;
 }
 
-.contact-map {
+.contact-us .section-heading .line-dec {
+  margin: 0 auto;
+}
+
+.contact-us .section-heading {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+
+form#contact:before {
+  background-image: url(../images/contact-top-right-v3.png);
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 726px;
+  height: 78px;
+  background-repeat: no-repeat;
+  content: '';
+  z-index: 1;
+}
+
+.contact-dec img {
+  max-width: 224px;
+  position: absolute;
+  right: 25px;
+  top: -242px;
+}
+
+
+form#contact {
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+  position: relative;
+  background-color: #fff;
+  border-radius: 23px;
+  text-align: center;
+}
+
+form#contact #map iframe {
+  border-top-left-radius: 23px;
+  border-bottom-left-radius: 23px;
+  margin-bottom: -7px;
+  position: relative;
+  z-index: 2;
+}
+
+.fill-form {
+  padding: 80px 60px 80px 30px;
+}
+
+.fill-form .info-post {
+  margin-bottom: 20px;
+}
+
+.fill-form .icon {
+  text-align: center;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+  border-radius: 23px;
+  padding: 25px 15px;
+}
+
+.fill-form .icon img {
+  max-width: 60px;
+  display: block;
+  margin: 0 auto;
+}
+
+.fill-form .icon a {
+  margin-top: 15px;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 500;
+  color: #2a2a2a;
+  transition: all .3s;
+}
+
+.fill-form .icon:hover a {
+  color: #4da6e7;
+}
+
+form#contact input {
+  width: 100%;
+  height: 46px;
+  background-color: transparent;
+  border: 1px solid #eee;
+  outline: none;
+  font-size: 15px;
+  font-weight: 300;
+  color: #2a2a2a;
+  padding: 0px 20px;
+  border-radius: 23px;
   margin-top: 30px;
 }
 
-.contact-form {
-  margin-top: 50px;
-  margin-bottom: 100px;
-  padding-top: 50px;
-  border-top: 1px solid #dce4e6;
+form#contact input::placeholder {
+  color: #aaa;
 }
-.contact-form h3 {
-  margin: 0 0 40px 0;
-}
-.contact-form .widget-inner {
-  margin-top: 40px;
-}
-.contact-form #email, .contact-form #name, .contact-form #subject, .contact-form textarea {
+
+form#contact textarea {
   width: 100%;
   min-width: 100%;
   max-width: 100%;
-}
-.contact-form input.mainBtn {
-  width: auto;
-}
-.contact-form textarea {
-  min-height: 160px;
-}
-
-#result {
+  max-height: 200px;
+  min-height: 200px;
+  height: 200px;
+  border-radius: 23px;
+  background-color: transparent;
+  border: 1px solid #eee;
+  outline: none;
+  font-size: 15px;
+  font-weight: 300;
+  color: #2a2a2a;
+  padding: 15px 20px;
   margin-top: 30px;
-  color: white;
-}
-#result .success {
-  background-color: #84c333;
-  padding: 14px 20px;
-}
-#result .error {
-  background-color: #d15858;
-  padding: 14px 20px;
 }
 
-.site-footer {
-  background-color: #f1f4f5;
-  padding: 100px 0;
-  color: #aaaaaa;
-  font-family: "Raleway", sans-serif;
+form#contact textarea::placeholder {
+  color: #aaa;
 }
 
-.footer-menu li {
+form#contact button {
   display: inline-block;
-  margin: 0 20px;
-}
-.footer-menu li a {
-  color: #aaaaaa;
-  font-size: 13px;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-.footer-menu li a:hover {
-  color: #00a8d6;
+  background-color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  color: #4da6e7;
+  margin-top: 30px;
+  width: 100%;
+  text-transform: capitalize;
+  padding: 12px 25px;
+  border-radius: 23px;
+  letter-spacing: 0.25px;
+  border: 1px solid #4da6e7;
+  transition: all .3s;
+  outline: none;
 }
 
-.copyright-text {
-  margin-top: 30px;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 13px;
+form#contact button:hover {
+  background-color: #4da6e7!important;
+  color: #fff!important;
 }
 
 /*------------------------------------------------------
@@ -1385,5 +1460,174 @@ blockquote {
   .isotope-item {
     width: 100%;
     height: auto;
+  }
+}
+/* 
+---------------------------------------------
+responsive
+--------------------------------------------- 
+*/
+
+@media (max-width: 1200px) {
+  .header-area .main-nav .logo h4 {
+    font-size: 24px;
+  }
+  .header-area .main-nav .logo h4 img {
+    max-width: 25px;
+    margin-left: 0px;
+  }
+  .header-area .main-nav .nav li:last-child {
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  form#contact {
+    overflow: hidden;
+  }
+  .header-area .main-nav .logo h4 {
+    font-size: 20px;
+  }
+  .main-banner .left-content {
+    margin-right: 0px;
+  }
+  .main-banner {
+    text-align: center;
+    padding: 226px 0px 30px 0px;
+  }
+  .main-banner:before {
+    display: none;
+  }
+  .main-banner .right-image {
+    margin: 30px auto 0px auto;
+    text-align: center;
+  }
+  .features-item {
+    margin-bottom: 45px;
+  }
+  .last-features-item,
+  .last-skill-item {
+    margin-bottom: 0px !important;
+  }
+  .skill-item {
+    margin-bottom: 30px;
+  }
+  .about-left-image img {
+    margin-right: 0px;
+    margin-bottom: 45px;;
+  }
+  .services .naccs .menu div {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .service-item {
+    text-align: center;
+  }
+  .service-item .icon {
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+  .about-us .left-image {
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 45px;
+  }
+  .blog-posts {
+    margin-left: 0px;
+    margin-top: 30px;
+  }
+  .post-item {
+    margin-bottom: 70px;
+  }
+  .our-portfolio .owl-nav {
+    display: none !important;
+  }
+  .contact-info {
+    margin-top: 60px;
+  }
+  form#contact {
+    padding: 45px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header-area .main-nav .logo h4 {
+    font-size: 30px;
+  }
+  .header-area .main-nav .logo h4 img {
+    max-width: 30px;
+    margin-left: 5px;
+  }
+  .main-banner .info-stat {
+    margin-bottom: 15px;
+  }
+  .service-item {
+    text-align: center;
+    padding: 30px;
+  }
+  .service-item .icon {
+    float: none;
+    margin-right: 0px;
+    margin-bottom: 15px;
+  }
+  .service-item .right-content {
+    display: inline-block;
+  }
+  .services .naccs .menu div .thumb {
+    padding: 5px;
+  }
+  .services .icon img {
+    margin: 0px;
+  }
+  .services ul.nacc li.active {
+    padding: 45px;
+  }
+  .services .naccs .menu div  {
+    font-size: 0px;
+  }
+  .services ul.nacc li .right-image img {
+    float: none;
+  }
+  .our-portfolio .section-heading,
+  .about-us .section-heading,
+  .about-us .about-item,
+  .about-us p,
+  .about-us .main-green-button {
+    text-align: center;
+  }
+  .our-portfolio .section-heading .line-dec {
+    margin: 0 auto;
+  }
+  .our-services .section-heading {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .free-quote form input {
+    margin-left: 0px;
+    padding: 0px 30px;
+  }
+  .free-quote form button {
+    margin-left: 0px;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 0px;
+  }
+  .blog-posts {
+    margin-left: 0px;
+    margin-top: 30px;
+  }
+  .post-item {
+    margin-bottom: 30px;
+  }
+  .post-item .thumb img {
+    max-width: 140px;
+  }
+  .post-item .right-content p {
+    display: none;
+  }
+  .about-us .about-item {
+    margin-top: 15px;
+  }
+  form#contact {
+    padding: 30px;
   }
 }
