@@ -40,10 +40,15 @@ h3 {
 h4 {
   line-height: 1.7;
   font-size: 20px;
+  color: #65747c;
+  padding-bottom: 10px;
 }
 
 h5 {
   font-size: 16px;
+  padding-bottom: 25px;
+  color: #6c7275;
+  line-height: 1.5;
   
 }
 
